@@ -6,6 +6,8 @@
 
 Public Class Form1
 
+
+
     Public displayText As String
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Me.Close()
@@ -16,6 +18,8 @@ Public Class Form1
             "milk. Hand delivered by a African or European Swallow of your choice. Coconut shells are" &
             "given to poor squires in need of them for their knights."
         DisplaySpecialLabel.Text = displayText
+        My.Computer.Audio.Play(My.Resources.Resource1.migrate,
+            AudioPlayMode.Background)
     End Sub
 
     Private Sub SaladButton_MouseHover(sender As Object, e As EventArgs) Handles SaladButton.MouseHover
@@ -23,6 +27,8 @@ Public Class Form1
             "prepared by the Knights Who Say Ni! Garnished with a branch from the shrubbery gifted to" &
             " them by King Arthur himself."
         DisplaySpecialLabel.Text = displayText
+        My.Computer.Audio.Play(My.Resources.Resource1.ni,
+            AudioPlayMode.Background)
     End Sub
 
     Private Sub SoupButton_MouseHover(sender As Object, e As EventArgs) Handles SoupButton.MouseHover
@@ -30,11 +36,15 @@ Public Class Form1
         WarningLabel.ForeColor = Color.Red
         WarningLabel.Text = "WARNING! May still have bits of the Holy Hand Grenade of Antioch"
         DisplaySpecialLabel.Text = displayText
+        My.Computer.Audio.Play(My.Resources.Resource1.HolyHandGrenade,
+            AudioPlayMode.BackgroundLoop)
     End Sub
 
     Private Sub MouseLeave_Button(sender As Object, e As EventArgs) Handles SaladButton.MouseLeave, SoupButton.MouseLeave, FishButton.MouseLeave
         displayText = ""
         DisplaySpecialLabel.Text = displayText
         WarningLabel.Text = displayText
+        My.Computer.Audio.Stop()
     End Sub
+
 End Class
