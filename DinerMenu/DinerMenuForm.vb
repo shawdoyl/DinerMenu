@@ -4,9 +4,7 @@
 'Diner Menu Program
 'https://github.com/shawdoyl/DinerMenu.git
 
-Public Class Form1
-
-
+Public Class DinerMenuForm
 
     Public displayText As String
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
@@ -37,7 +35,7 @@ Public Class Form1
         WarningLabel.Text = "WARNING! May still have bits of the Holy Hand Grenade of Antioch"
         DisplaySpecialLabel.Text = displayText
         My.Computer.Audio.Play(My.Resources.Resource1.HolyHandGrenade,
-            AudioPlayMode.BackgroundLoop)
+            AudioPlayMode.Background)
     End Sub
 
     Private Sub MouseLeave_Button(sender As Object, e As EventArgs) Handles SaladButton.MouseLeave, SoupButton.MouseLeave, FishButton.MouseLeave

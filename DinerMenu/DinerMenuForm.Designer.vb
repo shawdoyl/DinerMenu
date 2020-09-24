@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class DinerMenuForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DinerMenuForm))
         Me.DisplaySpecialLabel = New System.Windows.Forms.Label()
         Me.DinerDisplayLabel = New System.Windows.Forms.Label()
         Me.FishButton = New System.Windows.Forms.Button()
@@ -115,7 +115,7 @@ Partial Class Form1
         Me.WarningLabel.TabIndex = 13
         Me.WarningLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Form1
+        'DinerMenuForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -129,8 +129,8 @@ Partial Class Form1
         Me.Controls.Add(Me.SoupButton)
         Me.Controls.Add(Me.DinerDisplayLabel)
         Me.Controls.Add(Me.DisplaySpecialLabel)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "DinerMenuForm"
+        Me.Text = "DinerMenu"
         Me.ResumeLayout(False)
 
     End Sub
